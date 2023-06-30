@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
-    <AssemblyName>DressMySlugcat</AssemblyName>
+    <AssemblyName>InkyJinkies</AssemblyName>
     <Description></Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>

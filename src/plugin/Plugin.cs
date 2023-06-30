@@ -24,7 +24,7 @@ namespace InkyJinkies
                 if (IsInit) return;
                 IsInit = true;
 
-                IL.Expedition.ChallengeTools.ValidRegionPearl += BigAcronymFix;
+                //IL.Expedition.ChallengeTools.ValidRegionPearl += BigAcronymFix;
                 IL.Menu.FastTravelScreen.ctor += BigAcronymFix;
                 IL.Menu.SlugcatSelectMenu.SlugcatPageContinue.ctor += BigAcronymFix;
                 IL.PlayerProgression.MiscProgressionData.ConditionalShelterData.GetShelterRegion += BigAcronymFix;
