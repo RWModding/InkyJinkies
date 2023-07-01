@@ -2,8 +2,6 @@
 using System.Security.Permissions;
 using System.Security;
 using System;
-using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
 
 [module: UnverifiableCode]
@@ -21,24 +19,6 @@ public class Plugin : BaseUnityPlugin
     public bool IsPostInit;
     public bool ExpeditionPatched;
 
-    public static Thread MainThread; 
-    public static readonly Queue<Action> RunOnMainThread = new();
-
-    public void Start()
-    {
-        MainThread = Thread.CurrentThread;
-    }
-
-    public void Update()
-    {
-        lock (RunOnMainThread)
-        {
-            while (RunOnMainThread.Count > 0)
-            {
-                RunOnMainThread.Dequeue().Invoke();
-            }
-        }
-    }
     private void OnEnable()
     {
         On.RainWorld.PreModsInit += RainWorld_PreModsInit;
@@ -72,7 +52,6 @@ public class Plugin : BaseUnityPlugin
             IsInit = true;
 
             BigAcronymFix.Apply();
-            DebugFix.Apply();
             Overlay.Apply();
         }
         catch (Exception ex)
