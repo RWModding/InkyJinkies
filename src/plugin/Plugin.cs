@@ -2,59 +2,104 @@
 using System.Security.Permissions;
 using System.Security;
 using System;
+using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
-using MonoMod.Cil;
 
 [module: UnverifiableCode]
 #pragma warning disable CS0618 // Type or member is obsolete
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-namespace InkyJinkies
+namespace InkyJinkies;
+
+[BepInPlugin("inkyjinkies", "Inky Jinkies", "1.0.0")]
+public class Plugin : BaseUnityPlugin
 {
-    [BepInPlugin("inkyjinkies", "Inky Jinkies", "1.0.0")]
-    public partial class Plugin : BaseUnityPlugin
+    public bool IsInit;
+    public bool IsPreInit;
+    public bool IsPostInit;
+    public bool ExpeditionPatched;
+
+    public static Thread MainThread; 
+    public static readonly Queue<Action> RunOnMainThread = new();
+
+    public void Start()
     {
-        private bool IsInit;
+        MainThread = Thread.CurrentThread;
+    }
 
-        private void OnEnable()
+    public void Update()
+    {
+        lock (RunOnMainThread)
         {
-            try
+            while (RunOnMainThread.Count > 0)
             {
-                if (IsInit) return;
-                IsInit = true;
-
-                //IL.Expedition.ChallengeTools.ValidRegionPearl += BigAcronymFix;
-                IL.Menu.FastTravelScreen.ctor += BigAcronymFix;
-                IL.Menu.SlugcatSelectMenu.SlugcatPageContinue.ctor += BigAcronymFix;
-                IL.PlayerProgression.MiscProgressionData.ConditionalShelterData.GetShelterRegion += BigAcronymFix;
-                IL.PlayerProgression.MiscProgressionData.SaveDiscoveredShelter += BigAcronymFix;
-                IL.SaveState.SaveToString += BigAcronymFix;
-
-                Debug.Log($"Plugin inkyjinkies is loaded!");
-            }
-            catch (Exception ex)
-            {
-                Debug.LogException(ex);
+                RunOnMainThread.Dequeue().Invoke();
             }
         }
+    }
+    private void OnEnable()
+    {
+        On.RainWorld.PreModsInit += RainWorld_PreModsInit;
+        On.RainWorld.OnModsInit += RainWorld_OnModsInit;
+        On.RainWorld.PostModsInit += RainWorld_PostModsInit;
+    }
 
-        private void BigAcronymFix(ILContext il)
+    private void RainWorld_PreModsInit(On.RainWorld.orig_PreModsInit orig, RainWorld self)
+    {
+        orig(self);
+  
+        try
         {
-            var cursor = new ILCursor(il);
+            if (IsPreInit) return;
+            IsPreInit = true;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogException(ex);
+        }
 
-            while (cursor.TryGotoNext(MoveType.Before, i => i.MatchLdcI4(0),
-                       i => i.MatchLdcI4(2),
-                       i => i.MatchCallOrCallvirt<string>(nameof(string.Substring))))
+    }
+
+    public void RainWorld_OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
+    {
+        orig(self);
+
+        try
+        {
+            if (IsInit) return;
+            IsInit = true;
+
+            BigAcronymFix.Apply();
+            DebugFix.Apply();
+            Overlay.Apply();
+        }
+        catch (Exception ex)
+        {
+            Debug.LogException(ex);
+        }
+    }
+
+    public void RainWorld_PostModsInit(On.RainWorld.orig_PostModsInit orig, RainWorld self)
+    {
+        orig(self);
+
+        try
+        {
+            //-- Is done every PostModsInit because it can only run after expedition has been initialized, and it may be initialized mid-game
+            if (ModManager.Expedition && !ExpeditionPatched)
             {
-                cursor.Index += 2;
-                cursor.Remove();
-                cursor.EmitDelegate((string text, int start, int length) =>
-                {
-                    var underscorePos = text.IndexOf('_', start);
-                    return text.Substring(start, underscorePos >= 0 ? underscorePos - start : length);
-                });
+                BigAcronymFix.ApplyExpedition();
+                ExpeditionPatched = true;
             }
+            
+            if (IsPostInit) return;
+            IsPostInit = true;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogException(ex);
         }
     }
 }
