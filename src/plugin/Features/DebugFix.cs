@@ -25,7 +25,10 @@ public static class DebugFix
         }
         else
         {
-            Plugin.RunOnMainThread.Enqueue(() => Shader_EnableKeyword_Trampoline.Invoke(null, new object[] { keyword }));
+            lock (Plugin.RunOnMainThread)
+            {
+                Plugin.RunOnMainThread.Enqueue(() => Shader_EnableKeyword_Trampoline.Invoke(null, new object[] { keyword }));
+            }
         }
     }
 
@@ -37,7 +40,10 @@ public static class DebugFix
         }
         else
         {
-            Plugin.RunOnMainThread.Enqueue(() => Shader_DisableKeyword_Trampoline.Invoke(null, new object[] { keyword }));
+            lock (Plugin.RunOnMainThread)
+            {
+                Plugin.RunOnMainThread.Enqueue(() => Shader_DisableKeyword_Trampoline.Invoke(null, new object[] { keyword }));
+            }
         }
     }
 }
