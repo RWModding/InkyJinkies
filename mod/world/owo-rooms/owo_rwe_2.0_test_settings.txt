@@ -1,0 +1,10 @@
+Template: NONE
+RainIntensity: 0.7173913
+Clouds: 0.9239131
+Grime: 0.75
+Palette: 25
+EffectColorA: 4
+EffectColorB: 4
+Effects: Bloom-0.3586957-20-20, 
+PlacedObjects: SpotLight><511.05><711.7535><226~1~204~-112~-79~-112, 
+FadePalette: 11, 0.6630435

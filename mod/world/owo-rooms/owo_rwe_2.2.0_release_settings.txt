@@ -1,0 +1,17 @@
+Template: NONE
+DangerType: AerieBlizzard
+CeilingDrips: 0
+RainIntensity: 0.6413044
+RumbleIntensity: 0.8695652
+WaveSpeed: 0.4856719
+WaveLength: 0.9475171
+WaveAmplitude: 0.01964261
+SecondWaveLength: 0.1666667
+SecondWaveAmplitude: 0
+Clouds: 0.3804348
+Grime: 0.173913
+Palette: 9
+EffectColorA: 2
+EffectColorB: 9
+Effects: RoomWrap-0.3478261-20-20, 
+FadePalette: 18, 0.4782609

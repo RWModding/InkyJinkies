@@ -1,0 +1,11 @@
+Template: NONE
+CeilingDrips: 0.1086956
+RainIntensity: 0
+Clouds: 0.5543478
+Grime: 0.3804348
+Palette: 1
+EffectColorA: 2
+EffectColorB: 2
+Effects: DustWave-0.07608695-82-38, HeatWave-0.0326087-320-166, 
+PlacedObjects: CorruptionTube><649.3824><496.6499><185~16, SpotLight><1630.839><699.571><237~-55~214~-254~-114~-264, LightSource><1370.321><389.3386><0.6739131~EffectColor2~15~6~125~-38.39746~1~1~Flash~0.6195652~0, 
+FadePalette: 6, 0.3586957, 0.5543478

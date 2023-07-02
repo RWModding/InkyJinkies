@@ -1,0 +1,7 @@
+Template: NONE
+Grime: 0.326087
+Palette: 20
+EffectColorA: 5
+EffectColorB: 3
+Effects: Bloom-0.7717391-20-20, SunBlock-0.8478261-369-203, 
+FadePalette: 11, 0.8260869
