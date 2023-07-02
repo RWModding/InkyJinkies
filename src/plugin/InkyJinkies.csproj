@@ -332,6 +332,10 @@
       <HintPath>..\..\game\RainWorld_Data\Managed\UnityEngine.XRModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Include="Pom">
+      <HintPath>..\..\lib\Pom.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
