@@ -1,0 +1,12 @@
+Template: NONE
+DangerType: AerieBlizzard
+WaveSpeed: 0.5
+WaveLength: 0.75
+WaveAmplitude: 0.04999999
+SecondWaveLength: 0.1666667
+SecondWaveAmplitude: 0
+Clouds: 0.3015966
+Palette: 1
+Effects: SkyAndLightBloom-0.3426744-20-20, BrokenZeroG-1-180.1177-103.9556, SSMusic-1-296.7969-173.6444, Lightning-1-473.2385-348.5778, Moth-1-715.8458-507.1556, 
+PlacedObjects: PlacedWind><88.3204><54.23409><0~554.1333~1015.409~554.8445~947.1094~29.15556~-0.1211001~Creatures~Horizontal, PlacedWind><776.1594><102.5555><-81.81772~324.4445~763.5531~579.0222~40~0~-1~Visuals~Vertical, Vine><1093.331><123.0335><-492.3292~456.2667, 
+FadePalette: 16, 0, 0.3634625, 0, 1

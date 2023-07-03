@@ -25,6 +25,12 @@ OWO_rwe_2.2.0_release : DISCONNECTED
 OWO_rwe_2.3.0_test : DISCONNECTED
 OWO_rwe_2.4.0_test : DISCONNECTED
 
+//-- Bill Nye Makes Babies Cry
+OWO_leviathanroom : DISCONNECTED
+OWO_trollface : DISCONNECTED
+OWO_turbines : DISCONNECTED
+OWO_jinkysploinker : DISCONNECTED
+
 END ROOMS
 
 CREATURES
