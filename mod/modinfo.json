@@ -5,8 +5,8 @@
 	"hide_version": false,
 	"authors": "Vigaro",
 	"description": "Inky Jinkies",
-	"requirements": [],
-	"requirements_names": [],
+	"requirements": ["pom"],
+	"requirements_names": ["POM"],
 	"checksum_override_version": false,
 	"tags": [ "Arenas", "Regions", "Campaigns", "Creatures", "Game Mechanics", "Items", "Cosmetics", "Game Modes", "Dependency", "Accessibility", "Translations", "Tools", "Custom Slugcat" ]
 }

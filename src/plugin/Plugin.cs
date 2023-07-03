@@ -52,6 +52,7 @@ public class Plugin : BaseUnityPlugin
 
             BigAcronymFix.Apply();
             Overlay.Apply();
+            AllSeeingEye.Apply();
         }
         catch (Exception ex)
         {

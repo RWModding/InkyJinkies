@@ -1,0 +1,10 @@
+Template: NONE
+Clouds: 1
+Grime: 0.2826087
+BkgDroneVolume: 1
+Palette: 39
+EffectColorA: 11
+EffectColorB: 10
+Effects: ExtraLoudThunder-1-16-133, LightRain-1-268-118, Fog-1-277-16, SunBlock-0-271-67, BkgOnlyLightning-1-14-80, Darkness-0.6521739-266-179, ZeroGSpecks-1-20-20, CorruptionSpores-1-258-245, Ant-0.5217391-255-309, 
+PlacedObjects: All Seeing Eye><892.8479><585.1744><-83~-123~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><928.8819><585.8497><-115~22~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><531.3267><644.5997><11~-59~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><568.0637><642.0728><-18~-196~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><179.4761><487.6986><100~50~FFFFFF~True~FFFFFF~25~5~0.5, All Seeing Eye><213.4468><486.2854><54~-99~FFFFFF~True~FFFFFF~25~5~0.5, All Seeing Eye><1970.063><445.5603><100~50~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><2008.747><446.05><56~-46~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><1946.503><645.05><88~-12~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><1913.936><646.0748><-125~-122~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><1002.722><426.552><-176~-169~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><1042.686><428.8232><-228~-315~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><1221.635><644.6478><-132~-170~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><1259.196><645.7885><-167~-314~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><1634.748><725.05><-194~-249~FFFFFF~False~FFFFFF~5~5~0.5, All Seeing Eye><1671.63><727.16><-230~-333~FFFFFF~False~FFFFFF~5~5~0.5, 
+FadePalette: 31, 0.2608696, 0.2608696, 0.2608696, 0.2608696

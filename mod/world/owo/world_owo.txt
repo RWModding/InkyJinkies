@@ -35,6 +35,9 @@ OWO_trollface : DISCONNECTED
 OWO_turbines : DISCONNECTED
 OWO_jinkysploinker : DISCONNECTED
 
+//-- Wack
+OWO_placekoning : DISCONNECTED
+
 END ROOMS
 
 CREATURES
