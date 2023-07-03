@@ -39,7 +39,6 @@ public class Plugin : BaseUnityPlugin
         {
             Debug.LogException(ex);
         }
-
     }
 
     public void RainWorld_OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
