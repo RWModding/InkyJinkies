@@ -1,0 +1,8 @@
+Template: NONE
+DangerType: None
+Grime: 0
+RandomItemDensity: 1
+RandomItemSpearChance: 0
+Effects: AboveCloudsView-0-20-20, Bloom-1-50-50, 
+PlacedObjects: CellDistortion><-203.0715><19854.26><1359.292~-1524.889~125.0833~-438.1975~1~0~1~0.05389471, PlacedWind><-198.2307><185.6848><-4.958334~19261.33~1356.792~19263.46~1354.667~0~-0.1992755~Creatures~Vertical, 
+BackgroundOffset: 0,543.4781
