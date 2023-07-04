@@ -21,7 +21,7 @@ public static class Overlay
         ActivateWindowsSprite = new FSprite("atlases/activate_windows");
         ActivateWindowsSprite.SetAnchor(1, 0);
         ActivateWindowsSprite.scale = 1.1f;
-        ActivateWindowsSprite.isVisible = false;
+        AlwaysOnTopContainer.isVisible = false;
         AlwaysOnTopContainer.AddChild(ActivateWindowsSprite);
         
         ReadjustSpritePositions();

@@ -38,6 +38,9 @@ OWO_jinkysploinker : DISCONNECTED
 //-- Wack
 OWO_placekoning : DISCONNECTED
 
+//-- serpanoy
+OWO_ballcore : DISCONNECTED
+
 END ROOMS
 
 CREATURES
