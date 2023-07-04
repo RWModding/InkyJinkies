@@ -3,6 +3,7 @@ using System.Security.Permissions;
 using System.Security;
 using System;
 using UnityEngine;
+using BepInEx.Logging;
 
 [module: UnverifiableCode]
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11,9 +12,12 @@ using UnityEngine;
 
 namespace InkyJinkies;
 
-[BepInPlugin("inkyjinkies", "Inky Jinkies", "1.0.0")]
+[BepInPlugin(MOD_ID, "Inky Jinkies", "1.0.0")]
 public class Plugin : BaseUnityPlugin
 {
+    public const string MOD_ID = "inkyjinkies";
+    public static new ManualLogSource Logger { get; private set; } = null!;
+
     public bool IsInit;
     public bool IsPreInit;
     public bool IsPostInit;
@@ -21,6 +25,8 @@ public class Plugin : BaseUnityPlugin
 
     private void OnEnable()
     {
+        Logger = base.Logger;
+
         On.RainWorld.PreModsInit += RainWorld_PreModsInit;
         On.RainWorld.OnModsInit += RainWorld_OnModsInit;
         On.RainWorld.PostModsInit += RainWorld_PostModsInit;
@@ -53,6 +59,7 @@ public class Plugin : BaseUnityPlugin
             BigAcronymFix.Apply();
             Overlay.Apply();
             AllSeeingEye.Apply();
+            RunawayRemixMenu.Apply();
         }
         catch (Exception ex)
         {
