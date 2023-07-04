@@ -1,0 +1,16 @@
+Template: NONE
+DangerType: Flood
+CeilingDrips: 0.8557292
+WaveSpeed: 0.5
+WaveLength: 0.75
+WaveAmplitude: 0.04738326
+SecondWaveLength: 0.1666667
+SecondWaveAmplitude: 0
+Grime: 0.6237319
+Palette: 19
+EffectColorA: 0
+EffectColorB: 18
+Effects: Darkness-0.5978261-20-20, 
+PlacedObjects: ARKillRect><351.6777><2994.342><192~115, ARKillRect><1212.629><1466.591><457~400, GooieDuck><579.9807><3469.448><0~0~2~3, ClimbableArc><318.9417><1791.33><0;0^0;40^111.8573;136^131.7781;39.82224, ClimbableArc><640.1179><3409.892><0;0^0;40^-150.6708;108.2667^-228.2198;-2.133324, ClimbableArc><360.4547><3120.589><0;0^0;40^143.8729;75.55556^164.5052;17.06667, ClimbableArc><147.4259><3495.27><0;0^0;40^221.4219;27.9111^214.3073;-125.8667, 
+AmbientSounds: OMNI><AM_SUB-BlankState.ogg><710.1991><262.0192><0.5><1, OMNI><SO_IND-Survey.ogg><744.6763><335.4055><0.1630435><1.9, 
+FadePalette: 10, 0.4347826, 0.4021739, 0.423913, 0.423913, 0.4021739
