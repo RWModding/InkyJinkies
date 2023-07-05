@@ -31,7 +31,7 @@ public static class Overlay
     {
         orig(self);
 
-        AlwaysOnTopContainer.isVisible = self.processManager.currentMainLoop is RainWorldGame { world.region.name: "OWO" };
+        AlwaysOnTopContainer.isVisible = self.processManager.currentMainLoop is RainWorldGame { world.region.name: Plugin.ACRONYM };
     }
 
     private static void Futile_UpdateScreenWidth(On.Futile.orig_UpdateScreenWidth orig, Futile self, int newwidth)

@@ -1,0 +1,8 @@
+priming : false
+size : 1.3
+minkarma : 1
+minkarmacap : 1
+radius : 4
+echosong : RW_86 - The Cycle
+room : OWO_turbines
+defaultflip : 0

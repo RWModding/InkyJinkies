@@ -16,6 +16,7 @@ namespace InkyJinkies;
 public class Plugin : BaseUnityPlugin
 {
     public const string MOD_ID = "inkyjinkies";
+    public const string ACRONYM = "OWO";
     public static new ManualLogSource Logger { get; private set; } = null!;
 
     public bool IsInit;
@@ -60,6 +61,7 @@ public class Plugin : BaseUnityPlugin
             Overlay.Apply();
             AllSeeingEye.Apply();
             RunawayRemixMenu.Apply();
+            BobMarley.Apply();
         }
         catch (Exception ex)
         {
