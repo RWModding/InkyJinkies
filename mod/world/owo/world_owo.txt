@@ -34,6 +34,10 @@ OWO_leviathanroom : DISCONNECTED
 OWO_trollface : DISCONNECTED
 OWO_turbines : DISCONNECTED
 OWO_jinkysploinker : DISCONNECTED
+OWO_aircross : DISCONNECTED
+OWO_conveyors1 : DISCONNECTED
+OWO_ei_oo_mitää_järkeä : DISCONNECTED
+OWO_wobblepipe : DISCONNECTED
 
 //-- Wack
 OWO_placekoning : DISCONNECTED
