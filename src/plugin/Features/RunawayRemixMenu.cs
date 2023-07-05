@@ -103,13 +103,11 @@ public static class RunawayRemixMenu
         {
             if (thisModButton.selectOrder + module.Dir > activeModCount - 1)
             {
-                Plugin.Logger.LogWarning("LOOP DONW");
                 index = 0;
                 module.MoveCounter++;
             }
             else if (thisModButton.selectOrder + module.Dir < 0)
             {
-                Plugin.Logger.LogWarning("LOOP UP");
                 index = activeModCount - 1;
                 module.MoveCounter++;
             }
