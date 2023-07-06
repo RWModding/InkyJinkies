@@ -42,7 +42,7 @@ namespace InkyJinkies
         }
 
         // :33
-        public static void applie()
+        public static void Apply()
         {
             Futile.atlasManager.LoadImage("atlases/Mine");
             Pom.Pom.RegisterManagedObject<Landmine, LandmineData, Pom.Pom.ManagedRepresentation>("Landmine", "Inky Jinkies");
@@ -91,18 +91,17 @@ namespace InkyJinkies
             if (!lit)
                 foreach (Player p in room.PlayersInRoom)
                 {
-                    Debug.Log($":33 < You're {Vector2.Distance(p.firstChunk.pos, this.pObj.pos)} units away!");
+                    //Debug.Log($":33 < You're {Vector2.Distance(p.firstChunk.pos, this.pObj.pos)} units away!");
                     if (Vector2.Distance(p.firstChunk.pos, this.pObj.pos) < 40)
                     {
-                        Debug.Log(":33 < oopsies!");
+                        //Debug.Log(":33 < oopsies!");
                         lit = true;
                     }
                 }
             else
             {
                 litTime++;
-                Debug.Log($":33 < *pouncing in {detTime - litTime} ticks! >w<*");
-
+                //Debug.Log($":33 < *pouncing in {detTime - litTime} ticks! >w<*");
 
 
                 if (litTime == detTime)
