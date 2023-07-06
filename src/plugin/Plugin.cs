@@ -4,6 +4,7 @@ using System.Security;
 using System;
 using UnityEngine;
 using BepInEx.Logging;
+using System.Linq;
 
 [module: UnverifiableCode]
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -17,6 +18,11 @@ public class Plugin : BaseUnityPlugin
 {
     public const string MOD_ID = "inkyjinkies";
     public const string ACRONYM = "OWO";
+
+    public static string ModName { get; private set; }
+    public static string Version { get; private set; }
+    public static string Authors { get; private set; }
+
     public static new ManualLogSource Logger { get; private set; } = null!;
 
     public bool IsInit;
@@ -56,6 +62,14 @@ public class Plugin : BaseUnityPlugin
         {
             if (IsInit) return;
             IsInit = true;
+
+            var mod = ModManager.ActiveMods.FirstOrDefault(mod => mod.id == MOD_ID);
+
+            ModName = mod.name;
+            Version = mod.version;
+            Authors = "modhole";
+
+            MachineConnector.SetRegisteredOI(MOD_ID, ModOptions.Instance);
 
             BigAcronymFix.Apply();
             Overlay.Apply();

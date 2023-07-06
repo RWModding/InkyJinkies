@@ -15,6 +15,7 @@ OWO_placekbattles : DISCONNETED, DISCONNECTED
 
 //-- intrepid
 OWO_meowmeowmeow : DISCONNECTED
+OWO_noahspyramid : DISCONNECTED
 
 //-- TiMoFey
 OWO_rwe_1.8_test : DISCONNECTED
@@ -24,6 +25,7 @@ OWO_rwe_2.1.2release : DISCONNECTED
 OWO_rwe_2.2.0_release : DISCONNECTED
 OWO_rwe_2.3.0_test : DISCONNECTED
 OWO_rwe_2.4.0_test : DISCONNECTED
+OWO_bee_movie_script_room : DISCONNECTED
 
 //-- Moon
 OWO_Chunnel : DISCONNECTED, DISCONNECTED
@@ -38,12 +40,18 @@ OWO_aircross : DISCONNECTED
 OWO_conveyors1 : DISCONNECTED
 OWO_ei_oo_mitää_järkeä : DISCONNECTED
 OWO_wobblepipe : DISCONNECTED
+OWO_frozenscape1 : DISCONNECTED
+owo_paintdustrial : DISCONNECTED
+OWO_placekarray : DISCONNECTED
 
 //-- Wack
 OWO_placekoning : DISCONNECTED
 
 //-- serpanoy
 OWO_ballcore : DISCONNECTED
+
+//-- Klumquart
+OWO_jinkiese : DISCONNECTED
 
 END ROOMS
 
