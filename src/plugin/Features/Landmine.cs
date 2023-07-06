@@ -101,7 +101,7 @@ namespace InkyJinkies
             else
             {
                 litTime++;
-                //Debug.Log($":33 < *pouncing in {detTime - litTime} ticks! >w<*");
+                Debug.Log($":33 < *pouncing in {detTime - litTime} ticks! >w<*");
 
 
                 if (litTime == detTime)
