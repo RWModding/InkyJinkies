@@ -55,7 +55,7 @@ public static class BobMarley
         var bluntPos = self.GetBobMarleyData().BluntPos;
         if (bluntPos != default)
         {
-            self.GetBobMarleyData().Smoke.EmitSmoke(bluntPos, new Vector2(0.1f, 0.25f), new FloatRect(bluntPos.x - 50f, bluntPos.y - 150f, bluntPos.x + 50f, bluntPos.y + 250f), 1f);
+            self.GetBobMarleyData().Smoke.EmitSmoke(bluntPos + new Vector2(0,10), new Vector2(0.1f, 0.25f), new FloatRect(bluntPos.x - 50f, bluntPos.y - 150f, bluntPos.x + 50f, bluntPos.y + 250f), 1f);
         }
     }
 
@@ -178,9 +178,9 @@ public static class BobMarley
         sLeaser.sprites[self.LightSprite].color = new Color(0.3f, 0.7f, 0.3f);
         sLeaser.sprites[self.totalSprites - 1] = new FSprite("atlases/echo_joint")
         {
-            anchorX = 0,
-            anchorY = 1,
-            scale = 0.3f
+            anchorX = 0.03f,
+            anchorY = 0.97f,
+            scale = 0.27f
         };
 
         for (int i = 0; i < self.legs.GetLength(0); i++)
