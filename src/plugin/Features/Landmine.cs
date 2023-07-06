@@ -21,9 +21,9 @@ namespace InkyJinkies
     {
         bool lit;
         int litTime;
-        const int detTime = 40;
-        static int crashCounter = 0;
-        const int crashReq = 4;
+        const int detTime = 50;
+        //static int crashCounter = 0;
+        //const int crashReq = 4;
 
         private PlacedObject pObj;
         private LightSource light;
@@ -116,12 +116,12 @@ namespace InkyJinkies
                     this.room.AddObject(new ShockWave(this.pObj.pos, 330f, 0.045f, 5, false));
                     this.room.PlaySound(SoundID.Bomb_Explode, this.pObj.pos);
 
-                    crashCounter++;
-                    if (crashCounter != crashReq)
-                        Destroy();
+                    //crashCounter++;
+                    //if (crashCounter != crashReq)
+                    //    Destroy();
                 }
 
-                if (crashCounter == crashReq && litTime == detTime + 5)
+                if (/*crashCounter == crashReq &&*/ litTime == detTime + 10)
                 {
                     Debug.Log(":33 < *crashes your game* X33");
                     Crash();
