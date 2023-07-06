@@ -62,6 +62,7 @@ public class Plugin : BaseUnityPlugin
             AllSeeingEye.Apply();
             RunawayRemixMenu.Apply();
             BobMarley.Apply();
+            Landmine.applie();
         }
         catch (Exception ex)
         {
