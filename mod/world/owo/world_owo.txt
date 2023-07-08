@@ -53,6 +53,15 @@ OWO_ballcore : DISCONNECTED
 //-- Klumquart
 OWO_jinkiese : DISCONNECTED
 
+//-- Grandiose Lights
+owo_gl_a1 : DISCONNECTED
+owo_gl_a2 : DISCONNECTED
+owo_gl_a3 : DISCONNECTED
+owo_gl_a4 : DISCONNECTED
+owo_gl_a5 : DISCONNECTED
+owo_gl_a6 : DISCONNECTED
+owo_gl_stoneheads : DISCONNECTED
+
 END ROOMS
 
 CREATURES

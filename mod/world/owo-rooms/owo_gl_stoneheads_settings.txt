@@ -1,0 +1,10 @@
+Template: NONE
+Clouds: 0.1521739
+Grime: 1
+Palette: 7
+EffectColorA: 8
+EffectColorB: 8
+Effects: SkyBloom-1-241-179, RedSwarmer-1-173-32, RockFlea-1-47-90, FireFlies-1-329-310, Lightning-1-20-20, 
+PlacedObjects: ExitSymbolShelter><86.86655><348.5875><, ExitSymbolShelter><87.24338><487.3001><, ExitSymbolShelter><447.4455><664.0422><, DataPearl><1174.902><606.3702><-268~-128~0~0~Misc~0, ReliableSpear><438.4429><359.0527><, ReliableSpear><1111.454><105.0555><, 
+AmbientSounds: OMNI><AM_ENV-Outside.ogg><828.6937><596.8081><0.5><1, OMNI><AM_ENV-LightWind.ogg><650.0547><596.0433><0.423913><0.9217392, 
+FadePalette: 5, 0.3369565
