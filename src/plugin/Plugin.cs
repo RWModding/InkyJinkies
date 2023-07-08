@@ -60,6 +60,9 @@ public class Plugin : BaseUnityPlugin
 
         try
         {
+            //-- Has to be set every time because of a remix bug
+            MachineConnector.SetRegisteredOI(MOD_ID, ModOptions.Instance);
+
             if (IsInit) return;
             IsInit = true;
 
@@ -68,8 +71,6 @@ public class Plugin : BaseUnityPlugin
             ModName = mod.name;
             Version = mod.version;
             Authors = "modhole";
-
-            MachineConnector.SetRegisteredOI(MOD_ID, ModOptions.Instance);
 
             BigAcronymFix.Apply();
             Overlay.Apply();
