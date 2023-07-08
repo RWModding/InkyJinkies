@@ -1,0 +1,15 @@
+Template: NONE
+DangerType: Blizzard
+CeilingDrips: 0.06693832
+WaveSpeed: 0.7471128
+WaveLength: 0.8764436
+WaveAmplitude: 1.050719E-06
+SecondWaveLength: 0.1666667
+SecondWaveAmplitude: 0
+Clouds: 0.6805257
+Palette: 1
+Effects: Coldness-0.5128056-20-20, SkyBloom-0.0386661-43.5177-88.31111, Fog-0.8429227-338.0615-170.8, 
+PlacedObjects: WormgrassRect><252.6544><133.2825><1^15, WormgrassRect><459.0679><-53.79696><5^12, PlacedWind><159.8457><77.87299><-134.4656~541.3334~782.0511~530.6666~832.5646~-17.77777~0.4485275~Creatures~Vertical, LocalBlizzard><492.1166><224.9988><-900.7064~581.4222~50~86.60254~0.8066692~1~0.2165303, SnowSource><729.0282><165.5587><Radial~-152.9636~48.8~50~86.60254~0.6984028~0, SnowSource><218.226><212.3732><Radial~0~100~50~86.60254~0.6674712~0, SnowSource><403.3939><446.6517><Radial~-251.1448~83.64447~50~86.60254~0.837602~0.3866624, SnowSource><392.5963><145.3253><Radial~0~100~50~86.60254~1~0, WormgrassRect><368.4876><345.7109><1^4, WormgrassRect><415.5571><346.7363><5^3, 
+AmbientSounds: OMNI><AM_WIN-HowlingWnd.ogg><778.4628><554.3309><0.6674705><1.02784, OMNI><AM_SUB-BlankState.ogg><709.9958><263.4379><0.182937><1, OMNI><AM_SFX-RandomGods.ogg><99.18109><474.5053><0.0746717><0.2761685, 
+Triggers: Spot<tA>event<tB>MusicEvent<eA>songName<eB>RW_89 - Vast Unlife<eA>vol<eB>0.4741397<eA>prio<eB>0.5<eA>mxThrt<eB>1<eA>loop<eB>0<eA>droneTol<eB>0<eA>rooms<eB>-1<eA>rest<eB>5<eA>fadeIn<eB>106.7186<eA>oneSongPerCycle<eB>0<eA>stopAtDeath<eB>0<eA>stopAtGate<eB>0<tA>multiUse<tB>0<tA>toCycle<tB>-1<tA>fromCycle<tB>0<tA>delay<tB>0<tA>panPos<tB>734.3219<tB>220.1041<tA>fireChance<tB>1<tA>entrance<tB>-1<tA>karma<tB>0<tA>slugcats<tB><tA>pos<tB>531.3219<tB>168.1041<tA>handlePos<tB>-696.3001<tB>-218.1109, 
+FadePalette: 41, 0.4122736

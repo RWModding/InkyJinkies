@@ -1,0 +1,9 @@
+Template: NONE
+CeilingDrips: 0.2173913
+Clouds: 0
+Grime: 0.5543478
+Palette: 3
+EffectColorA: 5
+EffectColorB: 3
+Effects: DustWave-0.8043478-20-20, Lightning-0.3478261-21-95, 
+FadePalette: 2, 0.4130435, 0.2934783

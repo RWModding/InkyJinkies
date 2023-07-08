@@ -1,0 +1,12 @@
+{
+	"id": "inkyjinkies",
+	"name": "Inky Jinkies",
+	"version": "1.0.0",
+	"hide_version": false,
+	"authors": "Vigaro",
+	"description": "Inky Jinkies",
+	"requirements": ["pom", "regionkit"],
+	"requirements_names": ["POM", "RegionKit"],
+	"checksum_override_version": false,
+	"tags": [ "Arenas", "Regions", "Campaigns", "Creatures", "Game Mechanics", "Items", "Cosmetics", "Game Modes", "Dependency", "Accessibility", "Translations", "Tools", "Custom Slugcat" ]
+}

@@ -1,0 +1,17 @@
+Template: NONE
+DangerType: Thunder
+WaveSpeed: 0.5
+WaveLength: 0.75
+WaveAmplitude: 0.04951512
+SecondWaveLength: 0.1666667
+SecondWaveAmplitude: 0
+Clouds: 0.8260869
+Grime: 0
+RandomItemDensity: 0
+RandomItemSpearChance: 0
+Palette: 25
+EffectColorA: 12
+EffectColorB: 12
+Effects: GreenSparks-1-20-20, CorruptionSpores-1-308-13, ZeroGSpecks-1-30-99, ElectricDeath-1-329-98, ZeroG-0.2282609-234-190, VoidMelt-0.2826087-639-93, 
+PlacedObjects: CGElectricArcGenerator><2193.874><194.4191><193.6083~-187.0444~8FA8FA~030AFF~2.449951^-60.3111~-1734.575^-17.33336~-1728.093^-17.33333~False~18~8.851902~10~0~0.1118668~-0.00273332~1~0.6056041~0.03599763~-0.01697034~0~591.8261~0.1293902~62~0.1130903, PWLightrod><466.3406><253.6292><-188.6794~-440~0.6304348~90~411.7391~0.5~0~0~1, LightSource><2355.051><641.2652><1~White~-6~-399~-625~-124.3975~1~0~None~0~1, LightSource><278.338><642.6327><1~White~-7~-437~-543~-511.3975~1~0~None~0~0, CorruptionTube><955.6453><188.8872><77~279, CorruptionTube><1250.182><421.4203><63~-243, CorruptionDarkness><1202.7><498.2548><-7~-78, Corruption><1418.07><493.587><-18~-185, CorruptionDarkness><1457.937><552.0693><68~93, CorruptionDarkness><2181.58><516.8955><-45~96, CorruptionDarkness><1849.613><62.14575><116~28, Corruption><2153.862><413.6447><-81~-96, Corruption><1674.462><434.5537><0~100, CorruptionTube><1639.69><177.6874><255~266, CorruptionTube><1676.525><429.5506><-452~-1, CorruptionTube><766.7366><454.3711><-238~-30, CorruptionDarkness><149.6444><443.8616><-3~-73, Corruption><532.8132><425.4398><191~62, Corruption><221.6903><403.6884><49~-128, PWLightrod><2115.577><421.8999><-665.6795~-608~0.2608696~270~749.1304~0.5~0~0~1, Corruption><1867.071><124.9118><39~100, SuperStructureFuses><1847.553><270.193><166~79, Corruption><1092.705><120.0551><-5~145, Corruption><888.3944><433.1116><0~-104, Corruption><1112.246><476.05><11~-123, Corruption><2003.802><428.0301><0~100, Corruption><2299.354><384.8293><0~100, CellDistortion><1294.197><276.9626><1429~51~50~86.60254~0.5434783~0.06521739~0~0.4673913, FreeformDecalOrSprite><-192.879><-43.40271><-10~279~0;0^2912;-60^2899;775^-15;768~Futile_White~1~ElectricDeath~Foreground~255~True~0000FF, 
+AmbientSounds: OMNI><AM_IND-SuperStructure.ogg><758.866><490.9129><0.5><1, OMNI><MSC-ElectricPulse.ogg><709.4103><353.3805><0.5434783><1, 

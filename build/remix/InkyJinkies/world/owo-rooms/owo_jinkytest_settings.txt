@@ -1,0 +1,6 @@
+Template: NONE
+DangerType: None
+RandomItemDensity: 0
+Palette: 10
+PlacedObjects: CustomDecal><-200.4042><-53.1756><-8~769~1367~770~1364~-2~33~258~0~1~0~respect~1~0~1~0~1~0~1~0, 
+AmbientSounds: OMNI><jinky_inkies.ogg><142.6989><525.1934><0.5><1, 

@@ -1,0 +1,74 @@
+ROOMS
+
+//-- snoodle
+GATE_SU_OWO : DISCONNECTED, OWO_jinkytest : GATE
+OWO_jinkytest : GATE_SU_OWO
+
+//-- Millisec
+OWO_femurbreaker : DISCONNECTED, DISCONNECTED
+OWO_placekmech : DISCONNECTED, DISCONNECTED
+OWO_shrine : DISCONNECTED
+OWO_gayballs : DISCONNECTED, DISCONNECTED
+
+//-- Nimble
+OWO_placekbattles : DISCONNETED, DISCONNECTED
+
+//-- intrepid
+OWO_meowmeowmeow : DISCONNECTED
+OWO_noahspyramid : DISCONNECTED
+
+//-- TiMoFey
+OWO_rwe_1.8_test : DISCONNECTED
+OWO_rwe_1.9level : DISCONNECTED
+OWO_rwe_2.0_test : DISCONNECTED
+OWO_rwe_2.1.2release : DISCONNECTED
+OWO_rwe_2.2.0_release : DISCONNECTED
+OWO_rwe_2.3.0_test : DISCONNECTED
+OWO_rwe_2.4.0_test : DISCONNECTED
+OWO_bee_movie_script_room : DISCONNECTED
+
+//-- Moon
+OWO_Chunnel : DISCONNECTED, DISCONNECTED
+OWO_l01 : DISCONNECTED, DISCONNECTED
+
+//-- Bill Nye Makes Babies Cry
+OWO_leviathanroom : DISCONNECTED
+OWO_trollface : DISCONNECTED
+OWO_turbines : DISCONNECTED
+OWO_jinkysploinker : DISCONNECTED
+OWO_aircross : DISCONNECTED
+OWO_conveyors1 : DISCONNECTED
+OWO_ei_oo_mitää_järkeä : DISCONNECTED
+OWO_wobblepipe : DISCONNECTED
+OWO_frozenscape1 : DISCONNECTED
+owo_paintdustrial : DISCONNECTED
+OWO_placekarray : DISCONNECTED
+
+//-- Wack
+OWO_placekoning : DISCONNECTED
+
+//-- serpanoy
+OWO_ballcore : DISCONNECTED
+
+//-- Klumquart
+OWO_jinkiese : DISCONNECTED
+
+//-- Grandiose Lights
+owo_gl_a1 : DISCONNECTED
+owo_gl_a2 : DISCONNECTED
+owo_gl_a3 : DISCONNECTED
+owo_gl_a4 : DISCONNECTED
+owo_gl_a5 : DISCONNECTED
+owo_gl_a6 : DISCONNECTED
+owo_gl_stoneheads : DISCONNECTED
+
+//-- NOTOCORDA
+OWO_blunt_420 : DISCONNECTED
+
+END ROOMS
+
+CREATURES
+END CREATURES
+
+BAT MIGRATION BLOCKAGES
+END BAT MIGRATION BLOCKAGES

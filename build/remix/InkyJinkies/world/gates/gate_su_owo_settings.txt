@@ -1,0 +1,6 @@
+Template: NONE
+BkgDroneVolume: 0
+Palette: 10
+EffectColorA: 19
+EffectColorB: 6
+FadePalette: 0, 0.2282609

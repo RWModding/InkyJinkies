@@ -1,0 +1,5 @@
+Template: NONE
+Palette: 7
+Effects: FairyParticles-1-20-20, 
+PlacedObjects: FairyParticleSettings><94.11539><78.39792><-261~154.6602~1~0~50~1~1~25~60~180~40~100~5~30~0~360~0~1~0~1~0~1~0.5~0.75~4~Leaf~SIN_IO~SIN_IO~200~1~20, KarmaFlower><442.188><1025.432><0~0~5~7, 
+BackgroundOffset: 0,35

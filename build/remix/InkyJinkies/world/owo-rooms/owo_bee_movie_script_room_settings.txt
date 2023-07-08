@@ -1,0 +1,10 @@
+Template: NONE
+Grime: 0
+BkgDroneVolume: 0.6847826
+BkgDroneNoThreatVolume: 0.2608696
+Palette: 36
+EffectColorA: 2
+EffectColorB: 14
+Effects: Contrast-0.173913-20-20, 
+PlacedObjects: CustomDecal><29.63843><-35.58401><-17~76~150~102~182~3~168~133~0~1~1~b~0.5326087~0.3152174~1~0.4130435~0.7173913~0~1~0.4782609, 
+FadePalette: 3, 0.6956522

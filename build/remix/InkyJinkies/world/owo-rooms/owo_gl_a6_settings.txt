@@ -1,0 +1,13 @@
+Template: NONE
+DangerType: Rain
+CeilingDrips: 0.5
+RainIntensity: 0.09434782
+RumbleIntensity: 0.55
+Clouds: 0.07
+BkgDroneVolume: 0.2769565
+Palette: 13
+EffectColorA: 2
+EffectColorB: 6
+Effects: Fog-1-20-20, AboveCloudsView-0.06521739-33-70, 
+AmbientSounds: OMNI><AM_WIN_Hilltop.ogg><660.9318><398.0835><0.5108696><1, OMNI><AM_WIN-StrongWnd2.ogg><659.0046><462.55><0.4130435><1, OMNI><AM_WIN-MedWind.ogg><646.132><527.3497><0.5><1, 
+FadePalette: 18, 0.1847826, 0.1630435
