@@ -78,6 +78,7 @@ public class Plugin : BaseUnityPlugin
             RunawayRemixMenu.Apply();
             BobMarley.Apply();
             Landmine.Apply();
+            RollingMinigame.Apply();
         }
         catch (Exception ex)
         {
