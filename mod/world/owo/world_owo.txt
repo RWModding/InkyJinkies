@@ -62,6 +62,9 @@ owo_gl_a5 : DISCONNECTED
 owo_gl_a6 : DISCONNECTED
 owo_gl_stoneheads : DISCONNECTED
 
+//-- NOTOCORDA
+OWO_blunt_420 : DISCONNECTED
+
 END ROOMS
 
 CREATURES

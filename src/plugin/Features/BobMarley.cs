@@ -41,6 +41,43 @@ public static class BobMarley
         On.Ghost.Chains.InitiateSprites += Chains_InitiateSprites;
         
         On.Smoke.SteamSmoke.SteamParticle.AddToContainer += SteamParticle_AddToContainer;
+        
+        On.RoomCamera.ApplyFade += RoomCameraOnApplyFade;
+        On.RoomCamera.ApplyPalette += RoomCameraOnApplyPalette;
+    }
+
+    private static void RoomCameraOnApplyPalette(On.RoomCamera.orig_ApplyPalette orig, RoomCamera self)
+    {
+        var preventChange = Plugin.ACRONYM.Equals(self.room?.world?.region?.name, StringComparison.InvariantCultureIgnoreCase);
+        var ghostMode = self.ghostMode;
+        if (preventChange)
+        {
+            self.ghostMode = 0;
+        }
+        
+        orig(self);
+
+        if (preventChange)
+        {
+            self.ghostMode = ghostMode;
+        }
+    }
+
+    private static void RoomCameraOnApplyFade(On.RoomCamera.orig_ApplyFade orig, RoomCamera self)
+    {
+        var preventChange = Plugin.ACRONYM.Equals(self.room?.world?.region?.name, StringComparison.InvariantCultureIgnoreCase);
+        var ghostMode = self.ghostMode;
+        if (preventChange)
+        {
+            self.ghostMode = 0;
+        }
+        
+        orig(self);
+
+        if (preventChange)
+        {
+            self.ghostMode = ghostMode;
+        }
     }
 
     private static void Ghost_Update(On.Ghost.orig_Update orig, Ghost self, bool eu)
@@ -119,7 +156,7 @@ public static class BobMarley
 
         var t = Mathf.InverseLerp(-1f, 1f, Vector2.Dot(Custom.DegToVec(45f), Custom.DegToVec(Mathf.Lerp(self.lastYRot, self.yRot, timeStacker) * 57.29578f + Mathf.Lerp(self.lastRot, self.rot, timeStacker))));
         var ghostMode = rCam.ghostMode;
-        var a = Custom.HSL2RGB(100 / 255f, 0.65f, Mathf.Lerp(0.53f, 0f, ghostMode));
+        var a = Custom.HSL2RGB(100 / 255f, 0.65f, Mathf.Lerp(0.53f, 0.25f, ghostMode));
         var b = Custom.HSL2RGB(100 / 255f, Mathf.Lerp(1f, 0.65f, ghostMode), Mathf.Lerp(1f, 0.53f, ghostMode));
 
         sLeaser.sprites[0].color = Color.Lerp(a, b, t);
@@ -157,7 +194,7 @@ public static class BobMarley
         joint.rotation = Custom.AimFromOneVectorToAnother(head.vertices.Last(), head.vertices.First());
         joint.SetPosition(head.vertices.Last());
 
-        var jointAngle = Custom.DegToVec(joint.rotation + 135);
+        var jointAngle = Custom.DegToVec(joint.rotation - 125);
         var smokePos = joint.GetPosition() + (jointAngle * 105) + camPos;
         self.GetBobMarleyData().BluntPos = smokePos;
     }
@@ -180,7 +217,8 @@ public static class BobMarley
         {
             anchorX = 0.03f,
             anchorY = 0.97f,
-            scale = 0.27f
+            scaleX = -0.27f,
+            scaleY = 0.27f
         };
 
         for (int i = 0; i < self.legs.GetLength(0); i++)
